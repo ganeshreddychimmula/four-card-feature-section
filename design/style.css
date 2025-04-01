@@ -1,0 +1,26 @@
+*,::after,::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --grey-500: rgb(77,79,98);
+    --grey-400: rgb(106,113,120);
+    --white:rgb(255,255,255);
+    --red: rgb(234,84,84);
+    --cyan:rgb(68,211,210);
+    --blue:rgb(84,158,242);
+    --orange:rgb(252,174,74);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+}
+
+body{
+    overflow-y: initial;
+}
