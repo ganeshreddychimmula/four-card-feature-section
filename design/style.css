@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 32px;
-  background-color: var(--white)
+  background-color: var(--white);
 }
 
 .tech-feature-header {
@@ -114,74 +114,112 @@ body {
   color: var(--grey-400);
 }
 
-.feature-card img{
-    height: 64px;
-    width: 64px;
-    align-self: flex-end;
+.feature-card img {
+  height: 64px;
+  width: 64px;
+  align-self: flex-end;
 }
 
-.supervisor{
-    border-color: var(--cyan);
+.supervisor {
+  border-color: var(--cyan);
 }
 
-.team-builder{
-    border-color: var(--red);
+.team-builder {
+  border-color: var(--red);
 }
 
-.karma{
-    border-color: var(--orange);
+.karma {
+  border-color: var(--orange);
 }
 
-.calculator{
-    border-color: var(--blue);
+.calculator {
+  border-color: var(--blue);
 }
 
-@media screen and (min-width: 400px) { 
-    body{
-        height: 100%;
-        overflow: hidden;
-    }
-    .tech-feature-header {
-        width: 540px;
-        margin-bottom: 74px;
-        text-align: center;
-      }
-      
-      .heading h1, .heading h2 {
-        font-size: 36px;
-      }
-      
-      .tech-feature-header p {
-        font-size: 15px;
-      }
+@media screen and (min-width: 400px) {
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+  .tech-feature-header {
+    width: 540px;
+    margin-bottom: 74px;
+    text-align: center;
+  }
 
-      .tech-feature-grid {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 32px;
-        grid-template-areas: 
-        ". . supervisor supervisor supervisor supervisor . ." 
-        "team-builder team-builder team-builder team-builder karma karma karma karma"
-        ". . calculator calculator calculator calculator . .";
-        width: fit-content;
-      }
+  .heading h1,
+  .heading h2 {
+    font-size: 36px;
+  }
 
-      .supervisor{
-        grid-area: supervisor;
-      }
+  .tech-feature-header p {
+    font-size: 15px;
+  }
 
-      .team-builder{
-        grid-area: team-builder
-      }
+  .tech-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 32px;
+    grid-template-areas:
+      ". . supervisor supervisor supervisor supervisor . ."
+      "team-builder team-builder team-builder team-builder karma karma karma karma"
+      ". . calculator calculator calculator calculator . .";
+    width: fit-content;
+  }
 
-      .karma{
-        grid-area: karma;
-      }
+  .supervisor {
+    grid-area: supervisor;
+  }
 
-      .calculator{
-        grid-area:calculator;
-      }
-      
+  .team-builder {
+    grid-area: team-builder;
+  }
+
+  .karma {
+    grid-area: karma;
+  }
+
+  .calculator {
+    grid-area: calculator;
+  }
 }
-    
+
+@media screen and (min-width: 800px) {
+  body {
+    padding: 72px;
+  }
+  .tech-feature-header {
+    margin-bottom: 72px;
+  }
+
+  .feature-card {
+    width: 350px;
+  }
+  .tech-feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      ". team-builder ."
+      "supervisor team-builder calculator"
+      "supervisor karma calculator"
+      ". karma .";
+    width: fit-content;
+  }
+
+  .supervisor {
+    grid-area: supervisor;
+  }
+
+  .team-builder {
+    grid-area: team-builder;
+  }
+
+  .karma {
+    grid-area: karma;
+  }
+
+  .calculator {
+    grid-area: calculator;
+  }
+}
