@@ -135,3 +135,53 @@ body {
 .calculator{
     border-color: var(--blue);
 }
+
+@media screen and (min-width: 400px) { 
+    body{
+        height: 100%;
+        overflow: hidden;
+    }
+    .tech-feature-header {
+        width: 540px;
+        margin-bottom: 74px;
+        text-align: center;
+      }
+      
+      .heading h1, .heading h2 {
+        font-size: 36px;
+      }
+      
+      .tech-feature-header p {
+        font-size: 15px;
+      }
+
+      .tech-feature-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 32px;
+        grid-template-areas: 
+        ". . supervisor supervisor supervisor supervisor . ." 
+        "team-builder team-builder team-builder team-builder karma karma karma karma"
+        ". . calculator calculator calculator calculator . .";
+        width: fit-content;
+      }
+
+      .supervisor{
+        grid-area: supervisor;
+      }
+
+      .team-builder{
+        grid-area: team-builder
+      }
+
+      .karma{
+        grid-area: karma;
+      }
+
+      .calculator{
+        grid-area:calculator;
+      }
+      
+}
+    
