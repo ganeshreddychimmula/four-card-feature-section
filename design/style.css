@@ -139,7 +139,6 @@ body {
 @media screen and (min-width: 400px) {
   body {
     height: 100%;
-    overflow: hidden;
   }
   .tech-feature-header {
     width: 540px;
